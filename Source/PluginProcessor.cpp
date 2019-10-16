@@ -10,6 +10,7 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+const int kOversampleFactor = 3;
 
 //==============================================================================
 SimpleSynthAudioProcessor::SimpleSynthAudioProcessor()
@@ -24,6 +25,7 @@ SimpleSynthAudioProcessor::SimpleSynthAudioProcessor()
                        )
 #endif
 {
+
     dspFaust.start();
 
 }

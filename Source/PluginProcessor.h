@@ -12,6 +12,8 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DspFaust.h"
+#include "FaustUIBridge.h"
+
 
 //==============================================================================
 /**
@@ -62,6 +64,8 @@ public:
     void setCutoff(float cutoff);
 private:
     DspFaust dspFaust;
+
+
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleSynthAudioProcessor)

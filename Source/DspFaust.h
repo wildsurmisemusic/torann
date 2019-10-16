@@ -37,7 +37,6 @@ class DspFaust
 
     private:
 
-        FaustPolyEngine* fPolyEngine;
 
     #if OSCCTRL
     #if JUCE_DRIVER
@@ -75,6 +74,7 @@ class DspFaust
         //
         //----
         DspFaust(bool auto_connect = true);
+        FaustPolyEngine* fPolyEngine;
 
         //--------------`DspFaust(int SR, int BS)`----------------
         // Constructor.

@@ -3,6 +3,11 @@
 <JUCERPROJECT id="bQB2xn" name="SimpleSynth" projectType="audioplug" jucerVersion="5.4.3">
   <MAINGROUP id="GL2EBG" name="SimpleSynth">
     <GROUP id="{64F54A56-54DE-AEE7-865A-365C50AA6F09}" name="Source">
+      <FILE id="aUpBTH" name="FaustUIBridge.cpp" compile="1" resource="0"
+            file="Source/FaustUIBridge.cpp"/>
+      <FILE id="Oax8ty" name="FaustUIBridge.h" compile="0" resource="0" file="Source/FaustUIBridge.h"/>
+      <FILE id="aeCzeA" name="Interface.cpp" compile="1" resource="0" file="Source/Interface.cpp"/>
+      <FILE id="cZ3jlp" name="Interface.h" compile="0" resource="0" file="Source/Interface.h"/>
       <FILE id="orWH1h" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="gTnHWo" name="DspFaust.cpp" compile="1" resource="0" file="Source/DspFaust.cpp"/>

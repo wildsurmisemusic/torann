@@ -12,6 +12,11 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "PluginProcessor.h"
+#include "Interface.h"
+
+
+typedef AudioProcessorValueTreeState::SliderAttachment SliderAttachment;
+
 
 //==============================================================================
 /**
@@ -35,12 +40,22 @@ private:
     MidiKeyboardState keyboardState;            // [5]
     MidiKeyboardComponent keyboardComponent;    // [6]
     
+    OpenGLContext m_glContext;
+
+//    AudioProcessorValueTreeState& m_vts;
+
+    ScopedPointer<Interface> m_main;
+    
     Slider cutoffSlider;
     Label cutoffLabel;
   
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     SimpleSynthAudioProcessor& processor;
+    
+    
+//    AudioProcessorValueTreeState& m_vts;
+
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleSynthAudioProcessorEditor)
 };
